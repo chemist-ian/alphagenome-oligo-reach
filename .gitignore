@@ -1,0 +1,18 @@
+# never commit secrets
+.env
+*api*key*
+*.key
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# large / third-party source PDFs (cite by DOI instead)
+*.pdf
+
+# third-party siRNA inputs (pulled by fetch_data.py, not redistributed)
+02_sirna_efficacy/eff.csv
+02_sirna_efficacy/mRNA_HUVK.fas
+02_sirna_efficacy/siRNA_HUVK.fas
